@@ -66,8 +66,4 @@
         app:layout_constraintTop_toBottomOf="@+id/addTag"
         app:srcCompat="@android:drawable/ic_input_add" />
 
-    <androidx.constraintlayout.helper.widget.Flow
-        android:id="@+id/flow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 </androidx.constraintlayout.widget.ConstraintLayout>
