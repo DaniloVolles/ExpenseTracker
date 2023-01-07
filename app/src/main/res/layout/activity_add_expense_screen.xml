@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddExpenseScreen">
+    tools:context=".activity.AddExpenseScreen">
 
     <TextView
         android:id="@+id/titleExpenseScreen"
@@ -27,7 +27,7 @@
         app:layout_constraintTop_toBottomOf="@+id/titleExpenseScreen" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal"
+        android:id="@+id/editValue"
         android:layout_width="217dp"
         android:layout_height="42dp"
         android:layout_marginStart="32dp"
@@ -42,7 +42,7 @@
         app:layout_constraintTop_toBottomOf="@+id/titleExpenseScreen" />
 
     <EditText
-        android:id="@+id/addTag"
+        android:id="@+id/editTag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -52,10 +52,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
+        app:layout_constraintTop_toBottomOf="@+id/editValue" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+        android:id="@+id/addExpenseButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
@@ -63,7 +63,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addTag"
+        app:layout_constraintTop_toBottomOf="@+id/editTag"
         app:srcCompat="@android:drawable/ic_input_add" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

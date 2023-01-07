@@ -1,7 +1,8 @@
 package com.danilovolles.expensetracker
 
-data class Expense (
-    val value: Double,
+data class Expense(
+    val value: String,
     val tag: String,
-    val note: String
+    val note: String ? = null,
+    val id: Int ? = null
     )

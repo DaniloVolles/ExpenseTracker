@@ -1,8 +1,9 @@
-package com.danilovolles.expensetracker
+package com.danilovolles.expensetracker.activity
 
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.danilovolles.expensetracker.R
 import com.github.mikephil.charting.charts.PieChart
 import com.github.mikephil.charting.data.PieData
 import com.github.mikephil.charting.data.PieDataSet

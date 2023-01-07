@@ -1,19 +1,19 @@
-package com.danilovolles.expensetracker
+package com.danilovolles.expensetracker.database
 
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
-class DataBase (context: Context):SQLiteOpenHelper (context, "despesas.db", null, 1) {
+class DataBase (context: Context):SQLiteOpenHelper (context, "expenses.db", null, 1) {
 
     override fun onCreate(db: SQLiteDatabase?) {
 
         val sql = """
-            CREATE TABLE TB_DESPESAS (
+            CREATE TABLE TB_EXPENSES (
                 ID INTEGER PRIMARY KEY AUTOINCREMENT,
-                VALOR DOUBLE,
+                VALUE DOUBLE,
                 TAG TEXT,
-                NOTA TEXT
+                NOTE TEXT
             );
         """.trimIndent()
 
@@ -22,7 +22,7 @@ class DataBase (context: Context):SQLiteOpenHelper (context, "despesas.db", null
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
-        db?.execSQL("DROP TABLE IF EXISTS TB_DESPESAS")
+        db?.execSQL("DROP TABLE IF EXISTS TB_EXPENSES")
         onCreate(db)
     }
 
