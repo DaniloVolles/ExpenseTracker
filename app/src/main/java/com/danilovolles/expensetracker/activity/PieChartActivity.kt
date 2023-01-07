@@ -35,15 +35,15 @@ class PieChartActivity : AppCompatActivity() {
 
         val pieDataSet = PieDataSet(list, null)
 
-        pieDataSet.setColors(ColorTemplate.MATERIAL_COLORS, 255)
-        pieDataSet.valueTextSize=15f
-        pieDataSet.valueTextColor= Color.BLACK
+        pieDataSet.setColors(ColorTemplate.VORDIPLOM_COLORS, 255)
+        pieDataSet.valueTextSize = 15f
+        pieDataSet.valueTextColor = Color.BLACK
 
-        val pieData = PieData(pieDataSet)
+        val pieData = PieData (pieDataSet)
 
-        pieChart.data=pieData
-        pieChart.description.text="Gráfico de Despesas"
-        pieChart.centerText="Despesas"
-        pieChart.animateY(1000)
+        pieChart.data = pieData
+        pieChart.description.text = "Gráfico de Despesas"
+        pieChart.centerText = "Despesas"
+        pieChart.animateY (1200)
     }
 }
