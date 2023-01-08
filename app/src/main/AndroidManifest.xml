@@ -13,12 +13,13 @@
         android:theme="@style/Theme.ExpenseTracker"
         tools:targetApi="31">
         <activity
-            android:name=".activity.PieChartActivity"
+            android:name=".activity.ChartActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity
             android:name=".activity.AddExpenseScreen"
             android:exported="false">

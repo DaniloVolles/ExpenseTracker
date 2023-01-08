@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         goPieChart = findViewById(R.id.go_pie_chart)
 
         goPieChart.setOnClickListener {
-            startActivity(Intent (this, PieChartActivity::class.java))
+            startActivity(Intent (this, ChartActivity::class.java))
         }
     }
 

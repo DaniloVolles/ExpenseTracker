@@ -7,7 +7,6 @@ import android.widget.Toast
 import com.danilovolles.expensetracker.Expense
 import com.danilovolles.expensetracker.R
 import com.danilovolles.expensetracker.database.DataBase
-import com.danilovolles.expensetracker.database.insertExpense
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class AddExpenseScreen : AppCompatActivity() {
